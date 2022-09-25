@@ -20,7 +20,6 @@ This section is more about software development processes and collaboration with
 * Clean Architecture, more info [here](https://www.amazon.co.uk/Clean-Architecture-Craftsmans-Software-Structure/dp/0134494164)
 * Software Development: Introduction to code testing, free article available [here](https://paolozaino.wordpress.com/2021/06/20/software-development-introduction-to-code-testing/)
 
-
 ### RISC OS Developer information
 
 * 4corn.co.uk excellent collection of old manuals for RISC OS Developers all available free and in PDF format, download them from [here](https://4corn.co.uk/articles/docs/#dev)
@@ -45,6 +44,8 @@ This section is more about software development processes and collaboration with
 * Steve Fryatt excellent introduction to WIMP programming in C on RISC OS, you can find it [here](https://www.stevefryatt.org.uk/risc-os/wimp-prog)
 
 ## Programming in C++ on RISC OS
+
+At this time ROOL DDE is still based on the original AT&T CFront release 3.0 (they just added few fixes here and there), While RISC OS 5 also has GCC 4.7.4 which supports up to early C++11 (not complete and exceptions do not work well on RISC OS). If you are after more modern C++ standards please have a look at the GCCSDK project.
 
 ### General C++ useful sources
 
@@ -73,9 +74,17 @@ More info [here](https://www.riscos.info/index.php/Using_GCCSDK)
 
 ## Programming in Bash on RISC OS
 
+* How to program in Bash Shell, more info [here](https://opensource.com/article/19/10/programming-bash-syntax-tools)
+
 ## Programming in Dash on RISC OS
 
 ## Programming in Ada on RISC OS
+
+* Ada 95 A guide for C and C++ programmers, free pdf availabel [here](https://www.cs.uni.edu/~mccormic/4740/guide-c2ada.pdf) 
+* Programming in Ada (In German language, but Google Translator seems to translate it ok), more info [here](http://legacy.huber-net.de/adagag.htm)
+* Ada and RISC OS, more info [here](http://legacy.huber-net.de/ada_e.htm)
+* Ada library for RISC OS, more info [here](http://legacy.huber-net.de/adalio_e.htm)
+* Ada class library for RISC OS, more info [here](http://legacy.huber-net.de/adalin_e.htm)
 
 ## Programming in Prolog on RISC OS
 
