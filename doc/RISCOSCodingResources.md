@@ -10,6 +10,7 @@ This section is for absolute beginners and we list a set of useful resources (in
 
 * Code: The Hidden Language of Computer Hardware and Software (2nd edition) available [here](https://www.amazon.co.uk/Code-Language-Computer-Hardware-Software-dp-0137909101/dp/0137909101/ref=dp_ob_title_bk)
 * The Art of Computer Programming (TAOCP) – Donald Knuth This is considered by many the bible of computer programming, it’s a set of multiple volumes, more info [here](https://en.wikipedia.org/wiki/The_Art_of_Computer_Programming)
+* Pragmatic Programmer, more info [here](https://www.amazon.co.uk/gp/product/B07VRS84D1?storeType=ebooks&pf_rd_p=d86bed0e-a872-45e2-bd93-7030c464dfa5&pf_rd_r=ASQYRTBVF8KNA89RFW4R&pd_rd_wg=Gfd2M&pd_rd_i=B07VRS84D1&ref_=dbs_r_recs_reads_cwrtbar_typ_r_0&pd_rd_w=p5KPV&content-id=amzn1.sym.d86bed0e-a872-45e2-bd93-7030c464dfa5&pd_rd_r=7f817fc3-7572-452d-8b80-270375a019f6)
 * Clean code, you can find more info [here](https://www.amazon.co.uk/Clean-Code-Handbook-Software-Craftsmanship/dp/0132350882/ref=pd_lpo_1?pd_rd_i=0132350882&psc=1)
 
 ### Introduction to Software Engineering
@@ -17,6 +18,8 @@ This section is for absolute beginners and we list a set of useful resources (in
 This section is more about software development processes and collaboration with other people.
 
 * Clean Architecture, more info [here](https://www.amazon.co.uk/Clean-Architecture-Craftsmans-Software-Structure/dp/0134494164)
+* Software Development: Introduction to code testing, free article available [here](https://paolozaino.wordpress.com/2021/06/20/software-development-introduction-to-code-testing/)
+
 
 ### RISC OS Developer information
 
@@ -25,18 +28,44 @@ This section is more about software development processes and collaboration with
 * RISC OS 3,4 and 6 developers info are available for free [here](http://riscos.com/support/developers/index.htm)
 * Beginners guide to WIMP development available for free [here](http://riscos.com/support/developers/wimpprog/index.htm)
 * Acorn Archimedes Games developer guide available for free [here](http://riscos.com/support/developers/agrm/index.htm)
+* RISC OS Info, a very useful and rich source of info for developers, you can find it [here](http://www.riscos.info/index.php/Introduction_to_RISC_OS)
+
+**Please Note:** Everyone interested on coding on RISC OS should ALWAYS have a copy of all the PRM handy and ready to be used.
 
 ## Programming in C on RISC OS
 
+* ANSI C99 Standard specification
+  * One PDF is available [here](https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwie0-bz67D6AhVIRUEAHR6qD5gQFnoECAkQAQ&url=https%3A%2F%2Fframa-c.com%2Fdownload%2Facsl_1.2.pdf&usg=AOvVaw21rxBMwz7xG7-8PZZ-G17y)
+  * C Pocket Reference, more info [here](https://books.google.co.uk/books/about/C_Pocket_Reference.html?id=MoGYDwAAQBAJ&hl=en&output=html_text&redir_esc=y)
+  * Harbison, S P and Steele, G L, (1994) A C Reference Manual, (fourth edition). Prentice-Hall, Englewood Cliffs, NJ, USA. ISBN 0133262243.
+  * Kernighan, B W and Ritchie, D M, (1988) The C Programming Language (second edition). Prentice-Hall, Englewood Cliffs, NJ, USA. ISBN 0-13-110362- 8. This is the original C ‘bible’, updated to cover the essentials of ANSI C too.
+  * Koenig, A, (1989) C Traps and Pitfalls, Addison-Wesley, Reading, Mass, USA. ISBN 0201179288.
 * Acorn/Castle/ROOL DDE C Manual (it's distributed with the DDE - Desktop Development Environment Compilers collection from RISC OS Open), more info [here](https://www.riscosopen.org/content/sales/dde)
 * Older copy of the Acorn ANSI C manual, you can find it [here]()
 * Steve Fryatt excellent introduction to WIMP programming in C on RISC OS, you can find it [here](https://www.stevefryatt.org.uk/risc-os/wimp-prog)
 
 ## Programming in C++ on RISC OS
 
+### General C++ useful sources
+
+* Stroustrup, B, (1991) The C++ Programming Language, (second edition). Addison-Wesley, Reading, Mass, USA. ISBN 0-201-53992-6.
+* Ellis, A and Stroustrup, B, (1990) The Annotated C++ Reference Manual. Addison-Wesley, Reading, Mass, USA. ISBN 0-201-51459-1.
+* CFront Reference manual, available [here](https://www.softwarepreservation.org/projects/c_plus_plus/cfront/release_2.0/doc/ProductReferenceManual.pdf)
+
+## The GCCSDK Project
+
+This is a cool project, for the ones that prefer to use Linux based tools to code for RISC OS.
+
+More info [here](https://www.riscos.info/index.php/Using_GCCSDK)
+
 ## Programming in BBC BASIC on RISC OS
 
 ## Programming in Lua (RiscLua)
+
+### RiscLua interpreter
+
+* Pre-built binaries [here](http://www.wra1th.plus.com/lua/risclua.html)
+* Source code [here](https://github.com/RISC-OS-Community/RiscLua)
 
 ## Programming in Python
 
