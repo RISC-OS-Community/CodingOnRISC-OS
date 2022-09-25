@@ -1,0 +1,23 @@
+src/c/** gitlab-language=c linguist-language=c linguist-detectable=true
+src/h/** gitlab-language=c linguist-language=c linguist-detectable=true
+src/c++/** gitlab-language=cpp linguist-language=cpp linguist-detectable=true
+src/cpp/** gitlab-language=cpp linguist-language=cpp linguist-detectable=true
+src/bas/** gitlab-language=bbcbasic linguist-language=bbcbasic linguist-detectable=true
+src/s/** gitlab-language=armasm linguist-language=assembly linguist-detectable=true
+src/Hdr/** gitlab-language=armasm linguist-language=assembly linguist-detectable=true
+src/fth/** gitlab-language=forth linguist-language=forth linguist-detectable=true
+src/p/** gitlab-language=prolog linguist-language=prolog linguist-detectable=true
+tests/**/c/** gitlab-language=c linguist-language=c linguist-detectable=true
+tests/**/h/** gitlab-language=c linguist-language=c linguist-detectable=true
+tests/**/c++/** gitlab-language=cpp linguist-language=cpp linguist-detectable=true
+tests/**/cpp/** gitlab-language=cpp linguist-language=cpp linguist-detectable=true
+tests/**/bas/** gitlab-language=bbcbasic linguist-language=bbcbasic linguist-detectable=true
+tests/**/Hdr/** gitlab-language=armasm linguist-language=assembly linguist-detectable=true
+tests/**/s/** gitlab-language=armasm linguist-language=assembly linguist-detectable=true
+tests/**/fth/** gitlab-language=forth linguist-language=forth linguist-detectable=true
+tests/**/p/** gitlab-language=prolog linguist-language=prolog linguist-detectable=true
+**,fe1 gitlab-language=make linguist-language=makefile linguist-detectable=true
+**,fff gitlab-language=text linguist-language=text linguist-detectable=true
+**,ffb gitlab-language=bbcbasic linguist-language=bbcbasic linguist-detectable=true
+VersionNum gitlab-language=c linguist-language=c
+

@@ -1,0 +1,7 @@
+.history/
+.vscode/
+*.swp
+*.swo
+*.orig
+.DS_Store
+

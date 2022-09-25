@@ -1,0 +1,54 @@
+name: Requirement Report
+description: File a requirement report
+title: "[Requirement]: "
+labels: [requirement, enhancement, feature]
+assignees:
+  - code-reviews-team
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to fill out this requirement report!
+  - type: input
+    id: contact
+    attributes:
+      label: Contact Details (optional)
+      description: How can we get in touch with you if we need more info?
+      placeholder: ex. email@example.com
+    validations:
+      required: false
+  - type: textarea
+    id: user
+    attributes:
+      label: As a RISC OS User I would like to
+      description: Tell us about your requirement from a general user point of view
+      placeholder: I would like that...
+      value: "a new feature would be added that does x and y"
+    validations:
+      required: false
+  - type: textarea
+    id: developer
+    attributes:
+      label: As a RISC OS Software Developer I would like to
+      description: Tell us about your requirement from a software developer point of view
+      placeholder: I would like that...
+      value: "a new feature would be added that does x and y"
+    validations:
+      required: false
+  - type: textarea
+    id: vendor
+    attributes:
+      label: As a RISC OS Vendor/Hardware designer I would like to
+      description: Tell us about your requirement from a vendor point of view
+      placeholder: I would like that...
+      value: "a new feature would be added that does x and y"
+    validations:
+      required: false
+  - type: checkboxes
+    id: terms
+    attributes:
+      label: Code of Conduct
+      description: By submitting this issue, you agree to follow our [Code of Conduct](./CODE_OF_CONDUCT.md)
+      options:
+        - label: I agree to follow this project's Code of Conduct
+          required: true

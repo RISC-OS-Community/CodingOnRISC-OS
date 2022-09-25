@@ -1,0 +1,116 @@
+name: Bug Report
+description: File a bug report
+title: "[Bug]: "
+labels: [bug, triage]
+assignees:
+  - dev-team
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to fill out this bug report!
+  - type: input
+    id: contact
+    attributes:
+      label: Contact Details (optional)
+      description: How can we get in touch with you if we need more info?
+      placeholder: ex. email@example.com
+    validations:
+      required: false
+  - type: input
+    id: prevalence
+    attributes:
+      label: Bug prevalence (optional)
+      description: "How often do you or others encounter this bug?"
+      placeholder: "Whenever I visit the user account page (1-2 times a week)"
+    validations:
+      required: false
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened?
+      description: Also tell us, what did you expect to happen?
+      placeholder: Tell us what you see!
+      value: "A bug happened!"
+    validations:
+      required: true
+  - type: textarea
+    id: repro
+    attributes:
+      label: Reproduction steps
+      description: "How do you trigger this bug? Please walk us through it step by step."
+      value: |
+        1.
+        2.
+        3.
+        ...
+      render: bash
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: Version
+      description: Which release are you using?
+      placeholder: v1.0.0
+      value: "v1.0.0"
+    validations:
+      required: true
+  - type: dropdown
+    id: platform
+    attributes:
+      label: Platform
+      description: Which platform are you running RISC OS on?
+      options:
+        - Acorn A3000 (with ARM 3)
+        - Acorn A30x0 or A4000 series (with ARM250)
+        - Acorn A5000
+        - Acorn A7000/A7000+ or Castle A7000+
+        - Acorn Archimedes 3x0/4x0 series (with ARM 3)
+        - Acorn Archimedes 5x0 series 
+        - Acorn RiscPC 600 (with ARM 610)
+        - Acorn RiscPC 700 (with ARM 710)
+        - Acorn RiscPC x00 with StrongARM
+        - Acorn RiscPC x00 with Kinetic or Castle RiscPC
+        - BeagleBoard
+        - BeagleBoard xM
+        - CJE RapidO Ig
+        - CJE RapidO Ti
+        - Elesar Titanium
+        - PandaBoard
+        - PandaBoard ES
+        - Raspberry Pi 0 all models
+        - Raspberry Pi 1 model A or B
+        - Raspberry Pi 2 all models
+        - Raspberry Pi 3B+
+        - Raspberry Pi 4 (Default)
+        - Raspberry Pi 400 (edge)
+        - RComp ARMBook or PineBook
+        - RComp ARMiniX
+        - RComp ARMX6
+        - RComp Forte
+        - RComp Mini.m
+    validations:
+      required: true
+  - type: input
+    id: riscosversion
+    attributes:
+      label: Which version of RISC OS are you using?
+      placeholder: v1.0.0
+      value: "v1.0.0"
+    validations:
+      required: true
+  - type: textarea
+    id: logs
+    attributes:
+      label: Can you copy and paste the list of loaded modules? 
+      description: To obtain a list of loaded modules simply open a TaskWindow and type `*modules` and then `*rom.` and copy and paste here all the output
+      render: shell
+  - type: checkboxes
+    id: terms
+    attributes:
+      label: Code of Conduct
+      description: By submitting this issue, you agree to follow our [Code of Conduct](./CODE_OF_CONDUCT.md)
+      options:
+        - label: I agree to follow this project's Code of Conduct
+          required: true

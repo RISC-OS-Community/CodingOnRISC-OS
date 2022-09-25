@@ -1,0 +1,36 @@
+name: Question
+description: Ask us a question for this repository/project
+title: "[Question]: "
+labels: [question]
+assignees:
+  - code-reviews-team
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to ask us your question, we'll answer as soon as we have a chance.
+  - type: input
+    id: contact
+    attributes:
+      label: Contact Details (optional)
+      description: How can we get in touch with you if we need more info?
+      placeholder: ex. email@example.com
+    validations:
+      required: false
+  - type: textarea
+    id: question
+    attributes:
+      label: What would you like to ask?
+      description: type your question in the box below
+      placeholder: I would like to ask...
+      value: "I would like to ask..."
+    validations:
+      required: true
+  - type: checkboxes
+    id: terms
+    attributes:
+      label: Code of Conduct
+      description: By submitting this issue, you agree to follow our [Code of Conduct](./CODE_OF_CONDUCT.md)
+      options:
+        - label: I agree to follow this project's Code of Conduct
+          required: true

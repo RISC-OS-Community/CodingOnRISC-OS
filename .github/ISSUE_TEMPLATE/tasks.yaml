@@ -1,0 +1,45 @@
+name: Tasks Report
+description: File a tasks report
+title: "[Tasks]: "
+labels: [enhancement]
+assignees:
+  - code-reviews-team
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to fill out this tasks report!
+  - type: input
+    id: contact
+    attributes:
+      label: Contact Details (optional)
+      description: How can we get in touch with you if we need more info?
+      placeholder: ex. email@example.com
+    validations:
+      required: false
+  - type: textarea
+    id: background
+    attributes:
+      label: Background
+      description: Provide some context for the tasks list
+      placeholder: Ipsum lorem...
+      value: "Ipsum lorem..."
+    validations:
+      required: true
+  - type: textarea
+    id: task-list
+    attributes:
+      label: Definition of Done
+      description: Provide an easy to understand definition of done for each task
+      placeholder: "- [ ] A"
+      value: "- [ ] Task A is done when..."
+    validations:
+      required: false
+  - type: checkboxes
+    id: terms
+    attributes:
+      label: Code of Conduct
+      description: By submitting this issue, you agree to follow our [Code of Conduct](./CODE_OF_CONDUCT.md)
+      options:
+        - label: I agree to follow this project's Code of Conduct
+          required: true
