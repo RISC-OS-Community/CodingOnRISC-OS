@@ -29,7 +29,7 @@ This section is more about software development processes and collaboration with
 * Acorn Archimedes Games developer guide available for free [here](http://riscos.com/support/developers/agrm/index.htm)
 * RISC OS Info, a very useful and rich source of info for developers, you can find it [here](http://www.riscos.info/index.php/Introduction_to_RISC_OS)
 
-**Please Note:** Everyone interested on coding on RISC OS should ALWAYS have a copy of all the PRM handy and ready to be used.
+**Please Note:** Everyone interested on coding on RISC OS should ALWAYS have a copy of all the **PRM** handy and ready to be used.
 
 ## Programming in C on RISC OS
 
@@ -80,7 +80,7 @@ More info [here](https://www.riscos.info/index.php/Using_GCCSDK)
 
 ## Programming in Ada on RISC OS
 
-* Ada 95 A guide for C and C++ programmers, free pdf availabel [here](https://www.cs.uni.edu/~mccormic/4740/guide-c2ada.pdf) 
+* Ada 95 A guide for C and C++ programmers, free pdf available [here](https://www.cs.uni.edu/~mccormic/4740/guide-c2ada.pdf)
 * Programming in Ada (In German language, but Google Translator seems to translate it ok), more info [here](http://legacy.huber-net.de/adagag.htm)
 * Ada and RISC OS, more info [here](http://legacy.huber-net.de/ada_e.htm)
 * Ada library for RISC OS, more info [here](http://legacy.huber-net.de/adalio_e.htm)
