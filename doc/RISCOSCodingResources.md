@@ -28,6 +28,7 @@ This section is more about software development processes and collaboration with
 * Beginners guide to WIMP development available for free [here](http://riscos.com/support/developers/wimpprog/index.htm)
 * Acorn Archimedes Games developer guide available for free [here](http://riscos.com/support/developers/agrm/index.htm)
 * RISC OS Info, a very useful and rich source of info for developers, you can find it [here](http://www.riscos.info/index.php/Introduction_to_RISC_OS)
+* Useful info about the RISC OS "Nested WindowManager", a must read to understand how to write slightly more "modern-ish" looking desktop Apps on RISC OS, you can find the article [here](http://www.vigay.com/inet/acorn/nested.html)
 
 **Please Note:** Everyone interested on coding on RISC OS should ALWAYS have a copy of all the **PRM** handy and ready to be used.
 
@@ -43,6 +44,11 @@ This section is more about software development processes and collaboration with
 * Older copy of the Acorn ANSI C manual, you can find it [here]()
 * Steve Fryatt excellent introduction to WIMP programming in C on RISC OS, you can find it [here](https://www.stevefryatt.org.uk/risc-os/wimp-prog)
 
+## Testing libraries for C code (can be used also to test C++ code)
+
+* mUnit port to RISC OS, available [here](https://github.com/RISC-OS-Community/mUnit)
+* GreaTest port to RISC OS, available [here](https://github.com/RISC-OS-Community/GreaTest)
+
 ## Programming in C++ on RISC OS
 
 At this time ROOL DDE is still based on the original AT&T CFront release 3.0 (they just added few fixes here and there), While RISC OS 5 also has GCC 4.7.4 which supports up to early C++11 (not complete and exceptions do not work well on RISC OS). If you are after more modern C++ standards please have a look at the GCCSDK project.
@@ -51,7 +57,16 @@ At this time ROOL DDE is still based on the original AT&T CFront release 3.0 (th
 
 * Stroustrup, B, (1991) The C++ Programming Language, (second edition). Addison-Wesley, Reading, Mass, USA. ISBN 0-201-53992-6.
 * Ellis, A and Stroustrup, B, (1990) The Annotated C++ Reference Manual. Addison-Wesley, Reading, Mass, USA. ISBN 0-201-51459-1.
+
+### DDE C++
+
 * CFront Reference manual, available [here](https://www.softwarepreservation.org/projects/c_plus_plus/cfront/release_2.0/doc/ProductReferenceManual.pdf)
+
+### GNU GCC
+
+* A set of tutorial videos from James Hobson on using GCC 4.7.4 on RISC OS and how to get till building WIMP Apps, you can find it [here](https://www.youtube.com/watch?v=ALiMp-GHIX4)
+* GCC For RISC OS, A short intro on riscos.info, you can find it [here](https://www.riscos.info/index.php/GCC_for_RISC_OS)
+* GCC Tutorial for RISC OS, a short tutorial on riscos.info, you can find it [here](https://www.riscos.info/index.php/GCC_tutorial)
 
 ## The GCCSDK Project
 
