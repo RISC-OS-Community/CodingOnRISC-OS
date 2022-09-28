@@ -17,6 +17,7 @@ This section is for absolute beginners and we list a set of useful resources (in
 
 This section is more about software development processes and collaboration with other people.
 
+* Introduction to Software Engineering, available free [here](https://www.geeksforgeeks.org/software-engineering-introduction-to-software-engineering/)
 * Clean Architecture, more info [here](https://www.amazon.co.uk/Clean-Architecture-Craftsmans-Software-Structure/dp/0134494164)
 * Software Development: Introduction to code testing, free article available [here](https://paolozaino.wordpress.com/2021/06/20/software-development-introduction-to-code-testing/)
 
@@ -75,6 +76,9 @@ This is a cool project, for the ones that prefer to use Linux based tools to cod
 More info [here](https://www.riscos.info/index.php/Using_GCCSDK)
 
 ## Programming in BBC BASIC on RISC OS
+
+* BBC BASIC V (A Dabhand Guide), available free [here](http://www.riscos.com/support/developers/basicv/index.htm)
+* BBC BASIC Reference (ROOL Edition), available free [here](https://www.riscosopen.org/zipfiles/platform/common/BASICRefManual.3.pdf)
 
 ## Programming in Lua (RiscLua)
 
