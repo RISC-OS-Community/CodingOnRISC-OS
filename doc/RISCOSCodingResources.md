@@ -33,6 +33,25 @@ This section is more about software development processes and collaboration with
 
 **Please Note:** Everyone interested on coding on RISC OS should ALWAYS have a copy of all the **PRM** handy and ready to be used.
 
+## Programming in Ada on RISC OS
+
+* Ada 95 A guide for C and C++ programmers, free pdf available [here](https://www.cs.uni.edu/~mccormic/4740/guide-c2ada.pdf)
+* Programming in Ada (In German language, but Google Translator seems to translate it ok), more info [here](http://legacy.huber-net.de/adagag.htm)
+* Ada and RISC OS, more info [here](http://legacy.huber-net.de/ada_e.htm)
+* Ada library for RISC OS, more info [here](http://legacy.huber-net.de/adalio_e.htm)
+* Ada class library for RISC OS, more info [here](http://legacy.huber-net.de/adalin_e.htm)
+
+## Programming in ARM32 Assembly on RISC OS
+
+## Programming in Bash on RISC OS
+
+* How to program in Bash Shell, more info [here](https://opensource.com/article/19/10/programming-bash-syntax-tools)
+
+## Programming in BBC BASIC on RISC OS
+
+* BBC BASIC V (A Dabhand Guide), available free [here](http://www.riscos.com/support/developers/basicv/index.htm)
+* BBC BASIC Reference (ROOL Edition), available free [here](https://www.riscosopen.org/zipfiles/platform/common/BASICRefManual.3.pdf)
+
 ## Programming in C on RISC OS
 
 * ANSI C99 Standard specification
@@ -69,48 +88,31 @@ At this time ROOL DDE is still based on the original AT&T CFront release 3.0 (th
 * GCC For RISC OS, A short intro on riscos.info, you can find it [here](https://www.riscos.info/index.php/GCC_for_RISC_OS)
 * GCC Tutorial for RISC OS, a short tutorial on riscos.info, you can find it [here](https://www.riscos.info/index.php/GCC_tutorial)
 
-## The GCCSDK Project
+### The GCCSDK Project
 
 This is a cool project, for the ones that prefer to use Linux based tools to code for RISC OS.
 
 More info [here](https://www.riscos.info/index.php/Using_GCCSDK)
 
-## Programming in BBC BASIC on RISC OS
+## Programming in Dash on RISC OS
 
-* BBC BASIC V (A Dabhand Guide), available free [here](http://www.riscos.com/support/developers/basicv/index.htm)
-* BBC BASIC Reference (ROOL Edition), available free [here](https://www.riscosopen.org/zipfiles/platform/common/BASICRefManual.3.pdf)
+## Programming in Forth on RISC OS
 
-## Programming in Lua (RiscLua)
+## Programming in Haskell for RISC OS
+
+## Programming in LISP on RISC OS
+
+## Programming in Lua (RiscLua) on RISC OS
 
 ### RiscLua interpreter
 
 * Pre-built binaries [here](http://www.wra1th.plus.com/lua/risclua.html)
 * Source code [here](https://github.com/RISC-OS-Community/RiscLua)
 
-## Programming in Python
-
 ## Programming in Obey (RISC OS scripting)
 
-## Programming in Bash on RISC OS
-
-* How to program in Bash Shell, more info [here](https://opensource.com/article/19/10/programming-bash-syntax-tools)
-
-## Programming in Dash on RISC OS
-
-## Programming in Ada on RISC OS
-
-* Ada 95 A guide for C and C++ programmers, free pdf available [here](https://www.cs.uni.edu/~mccormic/4740/guide-c2ada.pdf)
-* Programming in Ada (In German language, but Google Translator seems to translate it ok), more info [here](http://legacy.huber-net.de/adagag.htm)
-* Ada and RISC OS, more info [here](http://legacy.huber-net.de/ada_e.htm)
-* Ada library for RISC OS, more info [here](http://legacy.huber-net.de/adalio_e.htm)
-* Ada class library for RISC OS, more info [here](http://legacy.huber-net.de/adalin_e.htm)
+## Programming in Python
 
 ## Programming in Prolog on RISC OS
 
-## Programming in LISP on RISC OS
-
 ## Programming in SmallTalk on RISC OS
-
-## Programming in ARM32 Assembly on RISC OS
-
-## Programming in Forth on RISC OS
