@@ -149,5 +149,11 @@ If you fear having to learn git or if you just want to help us with reviewing do
 The Android/Apple GitHub application makes it very easy to interact with us and provide your contribution without the need to learn git!
 Have a look in your device' on-line store for the GitHub application published by GitHub.
 
+# We now have a repo dedicated to Everything Coding on RISC OS
+
+The repo is maintained and updated to collect resources to help everyone (from absolute beginners till experienced developers) to learn and/or improve codign skills on RISC OS.
+
+You can find the repo [here](https://github.com/RISC-OS-Community/CodingOnRISC-OS)
+
 So no excuses! ;-)
 
