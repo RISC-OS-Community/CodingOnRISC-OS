@@ -12,6 +12,7 @@ The repository is organised in multiple levels:
 * [Ideas](doc/RISCOSCodingMeetingsIdeas.md) for meetings (we provide Zoom based monthly meetings with presentations on everything coding on RISC OS)
 * [Forums](doc/RISCOSCodingForums.md) where to ask questions related to code on RISC OS
 * [RISC OS Coding meetings](doc/RISCOSCodingMeetings.md) material
+* Useful [Code Snippets](src) organised by programming language and features.
 
 ## Contributing
 
@@ -19,6 +20,8 @@ Everyone is welcome to help us to improve the resources list and have more ideas
 
 ### How to contribute
 
-Follow the general instructions [here](CONTRIBUTING.md) and update the docs in `doc` directories as you feel appropriate. When done request a `Pull Reuqest` so we can review your changes and approve them, thanks!
+Follow the general instructions [here](CONTRIBUTING.md) and update the docs in `doc` directories as you feel appropriate. When done open a `Pull Request` to the `develop` branch and ask for a review from `RISC-OS-Community/code-reviews-team` so we can review your changes and approve them, thanks!
+
+Also make sure you have read the Code of Conduct [here](CODE_OF_CONDUCT.md), thanks.
 
 Enjoy! :)
