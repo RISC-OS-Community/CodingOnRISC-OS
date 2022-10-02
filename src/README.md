@@ -4,6 +4,7 @@ In this section we are collecting some useful code snippets that may help coding
 
 Each set of code snippets is organised by programming language name:
 
+```
 src
  |
  +-- BBC BASIC
@@ -11,7 +12,9 @@ src
  +-- RiscLua
  |
  .
-
+ .
+ .
+```
 And, within the Language group they may be organised by activity, like:
 
 - WIMP examples
