@@ -30,8 +30,8 @@ In the advanced part more advanced presentation and coding discussions take plac
 * Writing Device Drivers for RISC OS
 * Writing DLLs for GCC
 * Writing Demos for RISC OS
-* Mini course on coding optimisation for BBC BASIC programmers
-* Mini course on coding optimisation for C programmers
+* Mini course on coding optimization for BBC BASIC programmers
+* Mini course on coding optimization for C programmers
 * Debugging techniques for BBC BASIC programmers
 * Debugging techniques for C developers
 * Debugging techniques for C++ developers
@@ -43,3 +43,8 @@ In the advanced part more advanced presentation and coding discussions take plac
 * Using Dynamic Linking in Lua
 * Creating new binary extensions for Lua
 * Creating new binary extensions for Python
+* Cross compiling software using GCCSDK
+* Developing RISC OS software on Linux/Windows/Mac/… (what editors, workflows, etc do you use, what tools make it easier – maybe several people could contribute)
+* Porting software using the GCCSDK autobuilder
+* PackMan, packaging and packaging infrastructure
+* GCC shared libraries and how they work
