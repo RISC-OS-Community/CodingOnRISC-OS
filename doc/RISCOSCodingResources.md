@@ -30,6 +30,14 @@ This section is more about software development processes and collaboration with
 * Acorn Archimedes Games developer guide available for free [here](http://riscos.com/support/developers/agrm/index.htm)
 * RISC OS Info, a very useful and rich source of info for developers, you can find it [here](http://www.riscos.info/index.php/Introduction_to_RISC_OS)
 * Useful info about the RISC OS "Nested WindowManager", a must read to understand how to write slightly more "modern-ish" looking desktop Apps on RISC OS, you can find the article [here](http://www.vigay.com/inet/acorn/nested.html)
+* ROOL Collection of DEVELOPER documentation can be foun d[here](https://www.riscosopen.org/wiki/documentation/show/Programmer%20documentation) for free.
+
+### Get Compilers and Development Environments
+
+* Get Risc OS Open Desktop Development Environment (commercial) [here](https://www.riscosopen.org/content/sales/dde)
+  * Step by step instructions on how to install DDE on your RISC OS system [here](https://paolozaino.wordpress.com/2020/10/17/risc-os-installing-rool-desktop-development-environment-dde-tutorial/)
+* Get GNU Compiler Collections GCC (free and Open Source) [here](https://www.riscos.info/index.php/GCC_for_RISC_OS)
+* Get GCCSDK for Linux (GNU Compiler Collection for cross-build on Linux for RISC OS) [here](http://www.riscos.info/index.php/GCCSDK)
 
 **Please Note:** Everyone interested on coding on RISC OS should ALWAYS have a copy of all the **PRM** handy and ready to be used.
 
@@ -108,6 +116,10 @@ More info [here](https://www.riscos.info/index.php/Using_GCCSDK)
 
 * Pre-built binaries [here](http://www.wra1th.plus.com/lua/risclua.html)
 * Source code [here](https://github.com/RISC-OS-Community/RiscLua)
+
+### Documentaion
+
+* Lua 5.4 Reference Manual [here](https://www.lua.org/manual/5.4/manual.html)
 
 ## Programming in Obey (RISC OS scripting)
 
