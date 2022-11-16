@@ -30,7 +30,7 @@ This section is more about software development processes and collaboration with
 * Acorn Archimedes Games developer guide available for free [here](http://riscos.com/support/developers/agrm/index.htm)
 * RISC OS Info, a very useful and rich source of info for developers, you can find it [here](http://www.riscos.info/index.php/Introduction_to_RISC_OS)
 * Useful info about the RISC OS "Nested WindowManager", a must read to understand how to write slightly more "modern-ish" looking desktop Apps on RISC OS, you can find the article [here](http://www.vigay.com/inet/acorn/nested.html)
-* ROOL Collection of DEVELOPER documentation can be foun d[here](https://www.riscosopen.org/wiki/documentation/show/Programmer%20documentation) for free.
+* ROOL Collection of DEVELOPER documentation can be found [here](https://www.riscosopen.org/wiki/documentation/show/Programmer%20documentation) for free.
 
 ### Get Compilers and Development Environments
 
@@ -50,6 +50,9 @@ This section is more about software development processes and collaboration with
 * Ada class library for RISC OS, more info [here](http://legacy.huber-net.de/adalin_e.htm)
 
 ## Programming in ARM32 Assembly on RISC OS
+
+* Introduction to ARM (by David Thomas) available for free [here](http://www.davespace.co.uk/arm/introduction-to-arm/)
+* Rick Murray's ARM Assembly introduction available for free [here](https://heyrick.eu/assembler/index.html)
 
 ## Programming in Bash on RISC OS
 
@@ -71,6 +74,12 @@ This section is more about software development processes and collaboration with
 * Acorn/Castle/ROOL DDE C Manual (it's distributed with the DDE - Desktop Development Environment Compilers collection from RISC OS Open), more info [here](https://www.riscosopen.org/content/sales/dde)
 * Older copy of the Acorn ANSI C manual, you can find it [here]()
 * Steve Fryatt excellent introduction to WIMP programming in C on RISC OS, you can find it [here](https://www.stevefryatt.org.uk/risc-os/wimp-prog)
+* Efficient C for ARM (by David Thomas) available for free [here](https://www.davespace.co.uk/tags/BasicOptimisation.html)
+
+### Creating OS Modules in C
+
+* ROOL (RISC OS Open) guide to convert ASM modules to C, available for free [here](https://www.riscosopen.org/wiki/documentation/show/Converting%20modules%20to%20C)
+* Rick Murray's Writing modules in C tutorial available for free [here](https://heyrick.eu/blog/index.php?diary=20150323)
 
 ## Testing libraries for C code (can be used also to test C++ code)
 
@@ -117,7 +126,12 @@ More info [here](https://www.riscos.info/index.php/Using_GCCSDK)
 * Pre-built binaries [here](http://www.wra1th.plus.com/lua/risclua.html)
 * Source code [here](https://github.com/RISC-OS-Community/RiscLua)
 
-### Documentaion
+### RiscLua Forum
+
+* Official RiscLua forum on Lua Forum, [here](https://luaforum.com/index.php?pages/Lua_Installation_RISC_OS/)
+* RiscLua differences with original Lua [here](https://luaforum.com/index.php?threads/riscluas-differences.182/)
+
+### Documentation
 
 * Lua 5.4 Reference Manual [here](https://www.lua.org/manual/5.4/manual.html)
 
