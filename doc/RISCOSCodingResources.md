@@ -31,6 +31,7 @@ This section is more about software development processes and collaboration with
 * RISC OS Info, a very useful and rich source of info for developers, you can find it [here](http://www.riscos.info/index.php/Introduction_to_RISC_OS)
 * Useful info about the RISC OS "Nested WindowManager", a must read to understand how to write slightly more "modern-ish" looking desktop Apps on RISC OS, you can find the article [here](http://www.vigay.com/inet/acorn/nested.html)
 * ROOL Collection of DEVELOPER documentation can be found [here](https://www.riscosopen.org/wiki/documentation/show/Programmer%20documentation) for free.
+* RISC OS Modules DB from Peter Howkins, an impressively detailed resource with all OS components details and supports queries, available for free [here](https://www.marutan.net/db2/index.php)
 
 ### Get Compilers and Development Environments
 
