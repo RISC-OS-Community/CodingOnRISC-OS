@@ -22,6 +22,8 @@ Meetings are recorded.
 
 Recordings will be split too, so people willing to watch on YouTube will have an easy life to find what they need.
 
+Video recording will be split where possible in small sections easier to follow and to be indexed on the Internet or subdivided in chapters where it's better to keep everything in one place.
+
 Meetings are informal. So, no need to prepare ultra-professional presentations, however using slides and diagrams to explain concepts is welcome and we recommend to ensure always to show code in a "show and tell" form.
 
 Presentations can be pre-recorded to help the presenter or to make it easy to show processes that may take long time, however, in these cases, we'd recommend the presenter to also be in the live meeting for the Q&A session at the end of their presentation.
