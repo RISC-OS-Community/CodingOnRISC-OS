@@ -105,7 +105,9 @@ In the advanced part more advanced presentation and coding discussions take plac
 * How to use Jeffrey's SMP library
 * Building RISC OS Operating System
   * How to create RISC OS ROM (Robert Sprowson)
-* Introduction to Simon's Wilson C kernel?
+* Introduction to Simon Willcocks C kernel (Simon Willcocks)
+* Introduction to Simon Wilson Mesa/OpenGL port (Simon Wilson?)
+* Introduction to Khronos Driver (https://www.riscosports.co.uk/raspberrypi/) (TBD)
 * Using ARM NEON instructions in BBC BASIC
 * Using ARM NEON instructions in C
 * Using Dynamic Linking in Lua
@@ -122,3 +124,4 @@ In the advanced part more advanced presentation and coding discussions take plac
 * How people "do things" on RISC OS
   * Workflows, tools used etc.
 
+* Share your project, problems, solutions and questions
