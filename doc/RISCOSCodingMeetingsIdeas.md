@@ -93,6 +93,8 @@ In the advanced part more advanced presentation and coding discussions take plac
 
 ### Advanced
 
+* Using the Internet Stack with Norcroft C (TBD)
+* Using the Internet Stack with GCC (TBD)
 * Writing TaskModules (TBD)
 * Writing Device Drivers for RISC OS (TBD)
 * Writing DLLs for GCC (TBD)
