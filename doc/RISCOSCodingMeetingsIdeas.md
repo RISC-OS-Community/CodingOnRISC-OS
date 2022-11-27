@@ -14,30 +14,98 @@ In the advanced part more advanced presentation and coding discussions take plac
 
 ### Beginners
 
+* Getting the code!
+  * What is Git and why use Git
+  * How to use git on Windows to get RISC OS code (Robert Sprowson)
+  * How to use git on Linux to build RISC OS code on RISC OS via OmniClient/LanMan98
+  * How to use git on macOS to build RISC OS code (Charles Gerph)
+  * How to use git on GCCSDK to cross compiler for RISC OS (Steve Fryatt)
+  * How to use !Simplegit on RISC OS (Cameron Cawley)
+
+* How to use StrongEd for code editing
+
+* How to use VS Code to code on RISC OS (or other modern IDEs)
+  * Using VS Code for GCCSDK and BBC BASIC (Steve Fryatt)
+
 * Mini course on programming in BBC BASIC on RISC OS
+  * Let's start (Christopher Dewhurst)
+  * Calling SWIs (Christopher Dewhurst)
+  * How to use the GPIO on Raspberry Pi (TBD)
+  * How to use the Toolbox (TBD)
+  * How to use Fonts (both in full screen and Windows)
+  * Graphics in a Window
+
 * Mini course on programming in C on RISC OS
-* Mini course on moving from BBC BASIC to C on RISC OS?
+  * How to use GCC Compiler (TBD)
+    * How to install GCC on RISC OS
+    * How to compile Hello World
+    * Static Linking
+    * Dynamic Linking
+  * How to use DDE Compiler (TBD)
+    * How to install the compiler
+    * How to compile Hello World
+    * Static Linking
+  * Make Files
+    * What are they
+    * How to write them for RISC OS (TBD)
+  * Wimp Programming (Steve Fryatt)
+  * Using the ToolBox (TBD)
+  * Graphics in a Window
+  * Mini course on improving C syntax and form
+
+* Cross-compiling code for RISC OS
+  * How to use CMake for Cross Compiling (Cameron)
+
 * Mini course on programming in Lua on RISC OS
+  * Introduction to RiscLua (TBD)
+  * Wimp Programming (TBD)
+  * How to use the Toolbox (TBD)
+  * How to use Fonts (both in full screen and Windows)
+  * Graphics in a Window
+
 * Mini course on programming in Python on RISC OS
+  * Let's start (Chris Johns)
+  * Calling SWIs (Chris Johns)
+  * How to use the GPIO on Raspberry Pi (TBD)
+  * How to use the Toolbox (TBD)
+  * Graphics in a Window
+
 * Mini course on designing multi-tasking applications on RISC OS
-* Mini course on improving C syntax and form
+  * Cooperative Multitasking on RISC OS (TBD)
+  * Code Slicing and how to write algorithms that are Cooperative Multitasking friendly (TBD)
+  * Handling messages
+  * The ToolBox (see each specific programming language)
+
 * Mini course on developing 2D games on RISC OS
-* Mini course on programming in C++ on RISC OS?
+  * Introduction to SDL on RISC OS and cross compiling (Cameron Cawley)
+
+* Mini course on programming in C++ on RISC OS? (TBD)
+
+* How to test and debug software on RISC OS
+  * General code testing on RISC OS (Gerph)
+  * Introduction to Report (Chris Johns)
+  * How to use MemoryI and all the other debug modules (TBD)
+  * How to use GDBServer for remote debugging (TBD)
+  * Debugging code on RISC OS Pyromanic (Gerph)
+  * Writing Unit Test using mUnit lib (Paolo)
+  * Writing Unit Tests using Greatest libs (Paolo)
+  * Debugging RISC OS using JTAG (Sprow?)
 
 ### Advanced
 
-* Writing TaskModules 
-* Writing Device Drivers for RISC OS
-* Writing DLLs for GCC
-* Writing Demos for RISC OS
-* Mini course on coding optimization for BBC BASIC programmers
-* Mini course on coding optimization for C programmers
-* Debugging techniques for BBC BASIC programmers
-* Debugging techniques for C developers
-* Debugging techniques for C++ developers
-* Using Jeffrey's SMP library
+* Writing TaskModules (TBD)
+* Writing Device Drivers for RISC OS (TBD)
+* Writing DLLs for GCC (TBD)
+* Writing Demos for RISC OS (TBD)
+* Mini course on coding optimization for BBC BASIC programmers (TBD)
+* Mini course on coding optimization for C programmers (TBD)
+* Advanced Debugging techniques for BBC BASIC programmers (TBD)
+* Advanced Debugging techniques for C developers (TBD)
+* Advanced Debugging techniques for C++ developers
+* How to use Jeffrey's SMP library
 * Building RISC OS Operating System
-* Introduction to Simon's C kernel?
+  * How to create RISC OS ROM (Robert Sprowson)
+* Introduction to Simon's Wilson C kernel?
 * Using ARM NEON instructions in BBC BASIC
 * Using ARM NEON instructions in C
 * Using Dynamic Linking in Lua
@@ -48,3 +116,9 @@ In the advanced part more advanced presentation and coding discussions take plac
 * Porting software using the GCCSDK autobuilder
 * PackMan, packaging and packaging infrastructure
 * GCC shared libraries and how they work
+
+## Show and Tell
+
+* How people "do things" on RISC OS
+  * Workflows, tools used etc.
+
