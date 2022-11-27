@@ -14,7 +14,7 @@ This repository is organised in multiple "levels":
 * [Ideas](doc/RISCOSCodingMeetingsIdeas.md) for meetings (we provide Zoom based monthly meetings with presentations on everything coding on RISC OS)
 * [Forums](doc/RISCOSCodingForums.md) where to ask questions related to code on RISC OS
 * [RISC OS Coding meetings](doc/RISCOSCodingMeetings.md) material
-* [Meetings Schedule](doc/RISCOSCodingMeetingsSchedule.md)
+* [Meetings Calendar](doc/RISCOSCodingMeetingsSchedule.md)
 * Useful [Code Snippets](src), which are organised by programming language and features.
 
 ## Contributing

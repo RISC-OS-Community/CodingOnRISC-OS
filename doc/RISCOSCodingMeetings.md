@@ -2,21 +2,22 @@
 
 As part of the effort in this repo we are also trying to organize a set of zoom meetings for people to share, discuss, present:
 
-* How-To coding on RISC OS in various programming languages
+* How-To code on RISC OS in various programming languages
 * How-To use tools and utilities to help programming workflows
 * Share personal workflows used to produce software for RISC OS
 * Explore possibilities and methodologies
 * Analyze existing code (where licensing allow this!)
 * Present solutions to problems from a coding perspective
 * Produce mini programming courses to help beginners to learn more
+* Promote the use of Open Source Tools to help new comers  
 
 ## Meetings organization
 
 Each meeting is:
 
 * organized in 2 parts
-  * 1st part (beginners) dedicated to learn how to code on RISC OS (presentations from various community members on how to code on RO in various languages)
-  * 2nd part (advanced) dedicated to people to share their code, techniques, workflows etc. Everyone can take the mic here and share what we are working on and present projects (please note: it’s a coding meeting, so code needs to be showed! it’s not about selling things!), we can also go “round table” and everyone can share their progress and struggles in their coding journey/project.
+  * **1st part/section (Beginners)** dedicated to learn how to code on RISC OS (presentations from various community members on how to code on RO in various languages)
+  * **2nd part/section (Advanced)** dedicated to people to share their code, techniques, workflows etc. Everyone can take the mic here and share what we are working on and present projects (please note: it’s a coding meeting, so code needs to be showed! it’s not about selling things!), we can also go “round table” and everyone can share their progress and struggles in their coding journey/project.
 
 Meetings are recorded.
 

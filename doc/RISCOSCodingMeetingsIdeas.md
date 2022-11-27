@@ -7,7 +7,7 @@ Each zoom meeting is divided in two parts:
 1) Beginners
 2) Advanced
 
-In the beginner part we provide presentation and Q&A sections for whoever is learning how to code on RISC OS. 
+In the beginner part we provide presentation and Q&A sections for whoever is learning how to code on RISC OS.
 In the advanced part more advanced presentation and coding discussions take place. Also the advanced part has a Q&A section at the end, in case it's a presentation.
 
 ## Ideas for the presentations and mini courses
@@ -17,7 +17,7 @@ In the advanced part more advanced presentation and coding discussions take plac
 * Getting the code!
   * What is Git and why use Git
   * How to use git on Windows to get RISC OS code (Robert Sprowson)
-  * How to use git on Linux to build RISC OS code on RISC OS via OmniClient/LanMan98
+  * How to use git on Linux to build RISC OS code on RISC OS via OmniClient/LanMan98 (Paolo)
   * How to use git on macOS to build RISC OS code (Charles Gerph)
   * How to use git on GCCSDK to cross compiler for RISC OS (Steve Fryatt)
   * How to use !Simplegit on RISC OS (Cameron Cawley)
@@ -105,7 +105,9 @@ In the advanced part more advanced presentation and coding discussions take plac
 * How to use Jeffrey's SMP library
 * Building RISC OS Operating System
   * How to create RISC OS ROM (Robert Sprowson)
-* Introduction to Simon's Wilson C kernel?
+* Introduction to Simon Willcocks C kernel (Simon Willcocks)
+* Introduction to Simon Wilson Mesa/OpenGL port (Simon Wilson?)
+* Introduction to [Khronos Driver](https://www.riscosports.co.uk/raspberrypi/) (TBD)
 * Using ARM NEON instructions in BBC BASIC
 * Using ARM NEON instructions in C
 * Using Dynamic Linking in Lua
@@ -122,3 +124,4 @@ In the advanced part more advanced presentation and coding discussions take plac
 * How people "do things" on RISC OS
   * Workflows, tools used etc.
 
+* Share your project, problems, solutions and questions
