@@ -118,6 +118,8 @@ More info [here](https://www.riscos.info/index.php/Using_GCCSDK)
 
 ## Programming in Haskell for RISC OS
 
+* A WIMP App code example (from Julie Stamp) [here](https://gitlab.riscosopen.org/jstamp/hs)
+
 ## Programming in LISP on RISC OS
 
 ## Programming in Lua (RiscLua) on RISC OS
