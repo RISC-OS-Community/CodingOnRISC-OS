@@ -22,6 +22,18 @@ In the advanced part more advanced presentation and coding discussions take plac
   * How to use git on GCCSDK to cross compiler for RISC OS (Steve Fryatt)
   * How to use !Simplegit on RISC OS (Cameron Cawley)
 
+* Basics of coding on RISC OS
+    * Example: Turning On and Off caps lock on the keyboard (and an led using the GPIO on the Raspberry Pi)
+    * In BBC BASIC
+    * In DDE C
+    * In DDE C++
+    * In GCC C
+    * In GCC C++
+    * In RiscLua
+    * In Python
+    * In Perl
+    * ARM Assembly (AArch32)
+
 * How to use StrongEd for code editing
 
 * How to use VS Code to code on RISC OS (or other modern IDEs)
@@ -93,6 +105,8 @@ In the advanced part more advanced presentation and coding discussions take plac
 
 ### Advanced
 
+* Using the Internet Stack with Norcroft C (TBD)
+* Using the Internet Stack with GCC (TBD)
 * Writing TaskModules (TBD)
 * Writing Device Drivers for RISC OS (TBD)
 * Writing DLLs for GCC (TBD)

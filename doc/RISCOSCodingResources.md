@@ -73,7 +73,9 @@ This section is more about software development processes and collaboration with
   * Kernighan, B W and Ritchie, D M, (1988) The C Programming Language (second edition). Prentice-Hall, Englewood Cliffs, NJ, USA. ISBN 0-13-110362- 8. This is the original C ‘bible’, updated to cover the essentials of ANSI C too.
   * Koenig, A, (1989) C Traps and Pitfalls, Addison-Wesley, Reading, Mass, USA. ISBN 0201179288.
 * Acorn/Castle/ROOL DDE C Manual (it's distributed with the DDE - Desktop Development Environment Compilers collection from RISC OS Open), more info [here](https://www.riscosopen.org/content/sales/dde)
-* Older copy of the Acorn ANSI C manual, you can find it [here]()
+* Old copy of the Acorn ANSI C 4 manual, you can find it [here](https://4corn.co.uk/archive/docs/Acorn%20ANSI%20C%20Release%204-opt.pdf)
+* Old copy of the Acorn ANSI C 3 manual, you can find it [here](https://4corn.co.uk/archive/acornc3/ANSI%20C%20RELEASE%203-opt.pdf)
+  * And the release notes paper [here](https://4corn.co.uk/archive/acornc3/ANSI%20C%20%28Release%203%29%20-%20Release%20Note-opt.pdf)
 * Steve Fryatt excellent introduction to WIMP programming in C on RISC OS, you can find it [here](https://www.stevefryatt.org.uk/risc-os/wimp-prog)
 * Efficient C for ARM (by David Thomas) available for free [here](https://www.davespace.co.uk/tags/BasicOptimisation.html)
 
@@ -117,6 +119,8 @@ More info [here](https://www.riscos.info/index.php/Using_GCCSDK)
 ## Programming in Forth on RISC OS
 
 ## Programming in Haskell for RISC OS
+
+* A WIMP App code example (from Julie Stamp) [here](https://gitlab.riscosopen.org/jstamp/hs)
 
 ## Programming in LISP on RISC OS
 
