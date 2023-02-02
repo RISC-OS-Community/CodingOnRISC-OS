@@ -64,6 +64,10 @@ This section is more about software development processes and collaboration with
 * BBC BASIC V (A Dabhand Guide), available free [here](http://www.riscos.com/support/developers/basicv/index.htm)
 * BBC BASIC Reference (ROOL Edition), available free [here](https://www.riscosopen.org/zipfiles/platform/common/BASICRefManual.3.pdf)
 
+### BBC BASIC code examples
+
+* Charles Ferguson (Gerph) set of code examples [here](https://github.com/gerph/riscos-examples)
+
 ## Programming in C on RISC OS
 
 * ANSI C99 Standard specification
