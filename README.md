@@ -10,9 +10,8 @@ Progress updates are tracked [here](https://github.com/orgs/RISC-OS-Community/pr
 
 This repository is organised in multiple "levels":
 
-* [Resources List](doc/RISCOSCodingResources.md)
-* [Ideas](doc/RISCOSCodingMeetingsIdeas.md) for meetings (we provide Zoom based monthly meetings with presentations on everything coding on RISC OS)
-* [Forums](doc/RISCOSCodingForums.md) where to ask questions related to code on RISC OS
+* [Resources List](doc/RISCOSCodingResources.md) - Links collection ala Awesome Resources style, to documentations, code snippets and info on Coding on RISC OS and for RISC OS.
+* [Forums](doc/RISCOSCodingForums.md) where to ask questions related to code on RISC OS.
 * Useful [Code Snippets](src), which are organised by programming language and features.
 * [Ideas and suggestions for mini courses](doc/RISCOSCodingVideosIdeas.md) relative to Coding on RISC OS (and for RISC OS) videos for our YouTube channel.
 
