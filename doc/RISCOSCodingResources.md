@@ -32,6 +32,7 @@ This section is more about software development processes and collaboration with
 * Useful info about the RISC OS "Nested WindowManager", a must read to understand how to write slightly more "modern-ish" looking desktop Apps on RISC OS, you can find the article [here](http://www.vigay.com/inet/acorn/nested.html)
 * ROOL Collection of DEVELOPER documentation can be found [here](https://www.riscosopen.org/wiki/documentation/show/Programmer%20documentation) for free.
 * RISC OS Modules DB from Peter Howkins, an impressively detailed resource with all OS components details and supports queries, available for free [here](https://www.marutan.net/db2/index.php)
+* RISC OS PRM in XML format project from Charles Ferguson (Gerph), include info about RISC OS 6 [here](https://github.com/gerph/riscos-prminxml-staging/)
 
 ### Get Compilers and Development Environments
 
@@ -63,6 +64,10 @@ This section is more about software development processes and collaboration with
 
 * BBC BASIC V (A Dabhand Guide), available free [here](http://www.riscos.com/support/developers/basicv/index.htm)
 * BBC BASIC Reference (ROOL Edition), available free [here](https://www.riscosopen.org/zipfiles/platform/common/BASICRefManual.3.pdf)
+
+### BBC BASIC code examples
+
+* Charles Ferguson (Gerph) set of code examples [here](https://github.com/gerph/riscos-examples)
 
 ## Programming in C on RISC OS
 
