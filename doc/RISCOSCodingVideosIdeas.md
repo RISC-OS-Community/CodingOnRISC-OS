@@ -1,16 +1,12 @@
-# Everything coding on RISC OS meetings ideas
+# Everything coding on RISC OS videos ideas
 
-This document collects all the proposed ideas for the zoom meetings.
+This document collects all the proposed ideas for instructional videos on coding on RISC OS and for RISC OS.
 
-Each zoom meeting is divided in two parts:
+You can find all the videos already made and ready for consumption [here](https://www.youtube.com/@RiscosCommunityOnGithub/playlists). The link is organised in Play Lists.
 
-1) Beginners
-2) Advanced
+## Ideas for the mini courses
 
-In the beginner part we provide presentation and Q&A sections for whoever is learning how to code on RISC OS.
-In the advanced part more advanced presentation and coding discussions take place. Also the advanced part has a Q&A section at the end, in case it's a presentation.
-
-## Ideas for the presentations and mini courses
+YouTube video mini courses should be organised in "Play Lists" each of which dedicated to different aspects of the activities of coding on RISC OS.
 
 ### Beginners
 
@@ -23,7 +19,7 @@ In the advanced part more advanced presentation and coding discussions take plac
   * How to use !Simplegit on RISC OS (Cameron Cawley)
 
 * Basics of coding on RISC OS
-    * Example: Turning On and Off caps lock on the keyboard (and an led using the GPIO on the Raspberry Pi)
+  * Example: Turning On and Off caps lock on the keyboard (and an led using the GPIO on the Raspberry Pi)
     * In BBC BASIC
     * In DDE C
     * In DDE C++
