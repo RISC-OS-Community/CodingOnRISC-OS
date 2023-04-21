@@ -15,7 +15,7 @@
 # Language attributes for RISC OS files:
 *.pdf	       -text
 
-doc/**         linguist-documentation=true
+doc/**         linguist-documentation
 
 *,102          text diff=perl linguist-language=perl
 *,a73          text diff=python linguist-language=python
