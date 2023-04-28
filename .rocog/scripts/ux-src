@@ -1,0 +1,189 @@
+#!/bin/bash
+
+###################
+#        name: ux-src
+# description: SImple script to generate a UNIX-friendly structure from a RISC OS source tree
+#      author: Paolo Fabio Zaino
+#     license: Copyright by Paolo Fabio Zaino, all rights reserved
+#              distributed under CDDL v1.1
+# 
+# Long description:
+# This script is used to generate a temporary (and not pushable) ux-src directory
+# that will be used to reconfigure your source code in a way that is "usable" by
+# Linux/BSD based tools for code analysis, SAST etc.
+#
+# Usage:
+# To use this script it's easy:
+# ux-src gen 
+# the above will create ux-src in your local directory and will link all your source files
+# ina UNIXy way.
+# To remove ux-src directory type:
+# ux-src clean
+# And, if the directory exists in your pwd then it will be removed.
+####################
+
+cmd="$1"
+env="$2"
+curr_dir="$3"
+if [ "${curr_dir}" == "" ]
+then
+    curr_dir="$(pwd)"
+fi
+
+# Display command usage:
+function usage()
+{
+    echo "Usage: ux-src [gen|clean] [path]"
+    echo "gen: generate ux-src directory"
+    echo "clean: remove ux-src directory"
+}
+
+# Link files from directory f_dir to directory ux-src with extension f_ext:
+function link_files()
+{
+    f_dir="$1"
+    f_ext="$2"
+    if [ -d ${curr_dir}/src/${f_dir} ]
+    then
+        for f in ${curr_dir}/src/${f_dir}/*
+        do
+            if [ ! -f ${f} ]
+            then
+                continue
+            else
+                fname="$(basename ${f})"
+                if [ "${env}" == "github" ] 
+                then
+                    # GitHub Actions do not support symlinks:
+                    cp ${f} ${curr_dir}/ux-src/${fname}.${f_ext}
+                else
+                    ln -s ${f} ${curr_dir}/ux-src/${fname}.${f_ext}
+                fi
+            fi
+        done
+    fi
+}
+
+# Check command line syntax:
+function check_cmd()
+{
+    if [ "$cmd" != "gen" ] && [ "$cmd" != "clean" ]
+    then
+        usage
+        exit 1
+    fi
+}
+
+#################
+# Main program
+#################
+
+# Check commadn line syntax:
+check_cmd
+
+# Check if we are in a RISC OS source tree:
+if [ ! -d ${curr_dir}/src ]
+then
+    echo "Error: you are not in a RISC OS source tree"
+    exit 1
+fi
+
+# Run the command:
+if [ "$cmd" == "gen" ]
+then
+    echo "Generating ux-src directory in ${curr_dir}"
+    
+    # Generate ux-src:
+    mkdir ${curr_dir}/ux-src
+
+    # Link C files (if any):
+    link_files "c" "c"
+    link_files "C" "c"
+
+    # Link C++ files (if any):
+    link_files "cpp" "cpp"
+    link_files "CPP" "cpp"
+    link_files "cxx" "cxx"
+    link_files "CXX" "cxx"
+    link_files "cc"  "cc"
+    link_files "CC"  "cc"
+    link_files "c++" "cpp"
+    link_files "C++" "cpp"
+
+    # Link C++ header files (if any):
+    link_files "hpp" "hpp"
+    link_files "HPP" "hpp"
+    link_files "hxx" "hxx"
+    link_files "HXX" "hxx"
+
+    # Link C header files (if any):
+    link_files "h" "h"
+    link_files "H" "h"
+
+    # Link Assembler files (if any):
+    link_files "s" "s"
+    link_files "S" "s"
+    link_files "Hdr" "s"
+
+    # Link Forth files (if any):
+    link_files "fth" "fth"
+    link_files "FTH" "fth"
+
+    # Link Pascal and Prolog files (if any):
+    link_files "p" "p"
+    link_files "P" "p"
+
+    # Link Perl files (if any):
+    link_files "pl" "pl"
+    link_files "PL" "pl"
+
+    # Link BASIC files (if any):
+    link_files "bas" "bas"
+    link_files "BAS" "bas"
+
+    # Link Makefiles
+    for f in ${curr_dir}/src/Makefile*
+    do
+        fname="$(basename ${f})"
+        if [ "$env" == "github" ]
+        then
+            # GitHub Actions do not support symlinks:
+            cp ${f} ${curr_dir}/ux-src/${fname}
+        else
+            ln -s ${f} ${curr_dir}/ux-src/${fname}
+        fi
+    done
+
+    # Link the Build Script for Unix:
+    if [ -f ${curr_dir}/src/MkGCC.sh ]
+    then
+        if [ "$env" == "github" ]
+        then
+            # GitHub Actions do not support symlinks:
+            cp ${curr_dir}/src/MkGCC.sh ${curr_dir}/ux-src/MkGCC.sh
+        else
+            ln -s ${curr_dir}/src/MkGCC.sh ${curr_dir}/ux-src/MkGCC.sh
+        fi
+    fi
+
+    ls -l ${curr_dir}/ux-src
+else
+    # Remove existing ux-src
+    if [ -d ${curr_dir}/ux-src ]
+    then
+        for f in ${curr_dir}/ux-src/*
+        do
+            if [ "$env" == "github" ]
+            then
+                # GitHub Actions do not support symlinks:
+                rm -f ${f}
+            else
+                unlink ${f}
+            fi
+        done
+        rm -rf ${curr_dir}/ux-src
+    fi
+
+fi
+
+exit $?
