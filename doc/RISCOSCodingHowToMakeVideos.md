@@ -152,9 +152,19 @@ Normally we would like to avoid having too many "In-Depth" videos, so please con
 
 ### Video Editing
 
-You do NOT need to edit your videos, we'll do that for you. So please refrain yourself from editing your videos, this is because we have our internat standards on title, captioning, graphics, styling etc.
+You do NOT need to edit your videos, we'll do that for you. So please refrain yourself from editing your videos, this is because we have our internal standards on titles, captioning, graphics, styling, animations etc.
 
-We want all our videos to have the same look and feel, so please refrain yourself from editing your videos, we'll do that for you.
+We want all our videos to have the same look and feel, so, again, please refrain yourself from editing your videos, we'll do that for you.
+
+We do both, audio and video editing. We can improve audio quality, de-roomify, de-noise, de-echo, equalization and apply compression and limiting to your audio tracks, so you do NOT need to do that.
+
+We do full video editing, so you do NOT need to do that. We can add titles, captions, graphics, styling, animations etc. to your videos.
+
+Also, if you need sections of your video to explain concepts and fear your video may be too static in such sections, don't worry, we can add animations and even animated slides and timelines to make such sections a bit more "alive", so you do not need to do that.
+
+All our editing work is highly professional and done with the latest software and hardware available on the market, so you do not need to do that and/or spend a fortune on software, hardware and video editing and audio mastering courses and training.
+
+And finally, as mentioned in the script section, we also produce your video transcript fully synchronized with your video and audio and we have capabilities to make it available in other languages as well, so you do not need to do that.
 
 ### Recording software
 
