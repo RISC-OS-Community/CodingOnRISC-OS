@@ -142,6 +142,10 @@ Remember, in most cases viewer attention span is very short, so please try to ke
 
 There is an exception to the above rule for the "In-Depth" videos (see below). But such a videos are meant for a very technical audience which is already familiar with the topic of the video and is seeking for more details and more technical information.
 
+Series are usually discussed using the [issues](https://github.com/RISC-OS-Community/CodingOnRISC-OS/issues) section of this repository. If you wish to make a series of videos, please consider opening an issue to discuss it with the RISC OS Community team.
+
+When a series is agreed upon, we'll create a new Play List on the RISC OS Community YouTube channel and we'll add all the videos of the series to that Play List as they become available from the various authors (or from the single author).
+
 ### In-Depth
 
 If a single video requires a lot of details, then please consider contacting us to let us know you wish to record an "In-Depth" video. This way we can make sure the viewer will be able to follow the video and learn from it.
@@ -203,9 +207,9 @@ Please note, the list below is simply for reference or to give you an idea of wh
 * [Elgato Game Capture 4K60 S+](https://www.elgato.com/en/gaming/gamecapture-4k60-s-plus) - Elgato Game Capture 4K60 S+ is a USB 3.0 video capturing card. It's available on Amazon and other online stores.
 * [Elgato Game Capture HD](https://www.elgato.com/en/gaming/gamecapture-hd) - Elgato Game Capture HD is a USB 2.0 video capturing card. It's available on Amazon and other online stores.
 
-Feel free to pick your favorite language, make sure you post here which one you pick, so there aren't people duplicating effort.
-
 ### Code
+
+When making coding videos, please feel free to pick your favorite language. If the video is for a video series, please make sure you post on the specific [issue](https://github.com/RISC-OS-Community/CodingOnRISC-OS/issues) which one you pick, so there aren't people duplicating the effort.
 
 What follow is a list of requirement for code that is going to be shown on the videos. If you're planning to make coding videos, please read this section carefully.
 
