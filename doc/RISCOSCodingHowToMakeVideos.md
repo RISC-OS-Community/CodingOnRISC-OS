@@ -130,6 +130,10 @@ If instead you prefer a more elaborate script, then you may consider writing a "
 
 It's totally ok to use old releases of RISC OS (no need to focus only on RO 5, all RO releases are welcome!).
 
+Each video should come with a transcript of the audio. This is to make sure that the video will be accessible to everyone, including people with hearing disabilities. Also, this will help us to translate the video in other languages. However, given that this activity may be time consuming, we have been working to add AI capabilities to this community and we are now able to generate transcripts automatically and fully synchronized for you, so we no longer need you to provide a transcript of your video.
+
+On top of that we also have added AI capabilities to have transcripts synchronized translation in other languages, although such a feature is still in alpha testing.
+
 ### Series
 
 If you have a lot of content to show, please consider splitting it into multiple videos or consider making a series of videos. This way the viewer will be able to follow the series and learn from it, without having to learn a different approach for each video.
