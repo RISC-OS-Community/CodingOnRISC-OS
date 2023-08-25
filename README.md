@@ -19,6 +19,8 @@ This repository is organised in multiple "levels":
 
 Everyone is welcome to help us to improve this repository and the resources list (as well as proposing more ideas for the meetings!). Also, we are always seeking for people willing to provide courses, presentations and/or sharing your experience coding on RISC OS.
 
+More info and details [here](docs/RISCOSCodingHowToMakeVideos.md) for who wish to help us with the videos.
+
 ### How to contribute
 
 Follow the general instructions [here](CONTRIBUTING.md) and update the documents in `doc` directory as you feel appropriate. When done open a `Pull Request` to the `develop` branch and ask for a review from `RISC-OS-Community/code-reviews-team` so we can review your changes and approve them, thanks!

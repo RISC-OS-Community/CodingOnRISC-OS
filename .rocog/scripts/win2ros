@@ -1,0 +1,52 @@
+#!/bin/bash
+
+###################
+#        name: win2ros
+# description: Simple script to generate a RISC OS firendly source
+#              file from a Windows source file.
+#      author: Paolo Fabio Zaino
+#     license: Copyright by Paolo Fabio Zaino, all rights reserved
+#              distributed under CDDL v1.1
+# 
+# Long description:
+# This script can be used to generate a RISC OS friendly source file
+# from a Windows source file, where the \n\r is replaced with \n.
+# This is useful when you want to use a Windows editor to edit
+# RISC OS source files.
+####################
+
+path1="$1"
+path2="$2"
+
+# Display command usage:
+function usage()
+{
+    echo "Usage: win2ros [path1] [path2]"
+    echo "path1: path to the file to convert"
+    echo "path2: path to the converted file"
+    echo "Example: win2ros ./src/!Mk/Makefile ./src/!Mk/Makefile"
+    echo ""
+    echo "If path2 is not specified then the converted file will be"
+    echo "saved in the same directory as path1 with the same name"
+}
+
+if [ "${path1}" == "" ]
+then
+    usage
+    exit 1
+fi
+
+if [ ! -f "${path1}" ]
+then
+    echo "Error: ${path1} is not a file"
+    exit 1
+fi
+
+if [ "${path2}" == "" ]
+then
+    path2="${path1}"
+fi
+
+awk '{ sub("\r$", ""); print }' ${path1} > ${path2}
+
+exit $?
