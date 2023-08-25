@@ -26,9 +26,9 @@ Unless otherwise agreed with the RISC OS Community team, the following guideline
 
 Unless otherwise agreed with the RISC OS Community team, the following guidelines should be followed:
 
-* Videos should be related to RISC OS either coding on or for RISC OS or using RISC OS. If you want some ideas to work on please check the [Ideas and suggestions for mini courses](doc/RISCOSCodingVideosIdeas.md) document.
-* If you want to make a video about your own project, please contact the RISC OS Community team first. Also make sure your project is Open Source and, possibly, available (publicly) on GitHub. The reason to restrict videos to Open SOurce projects is to avoid any potential legal issues (so it's not negotiable, sorry!).
-* Videos should be as short as possible. If you have a lot of content to show, please consider splitting it into multiple videos.
+* Videos should be related to RISC OS, either coding "on" or "for" RISC OS or using RISC OS. If you want some ideas to work on, please check the [Ideas and suggestions for mini courses](doc/RISCOSCodingVideosIdeas.md) document.
+* If you want to make a video about your own project, please contact the RISC OS Community team first. Also make sure your project is Open Source and, possibly, available (publicly) on GitHub. The reason to restrict videos to Open SOurce projects only is to avoid any potential legal issues (so it's not negotiable, sorry!).
+* Videos should be as short as possible. If you have a lot of content to show, please consider splitting it into multiple videos (check [Series](#series) for more details).
 * Videos should be as simple as possible. Please avoid using technical terms or jargon unless strictly necessary. If you have to use technical terms or jargon, please explain them in simple terms and/or provide links to publicly available resources (like Wikipedia for example) that explains such concepts in clear terms.
 * You should record just the screen of your computer. Please avoid recording yourself or other people. We do not assume any responsibility for any potential legal issues that may arise from recording people without their explicit consent and/or privacy breaching coming from showing people on cameras etc.
 
