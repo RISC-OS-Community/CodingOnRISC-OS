@@ -30,7 +30,11 @@ doc/**         linguist-documentation
 src/**/c/*     text diff=c linguist-language=c
 src/**/h/*     text diff=c linguist-language=c
 src/**/c++/*   text diff=cpp linguist-language=cpp
-src/**/cpp/*   text diff=cpp linguist-language=cpp 
+src/**/cpp/*   text diff=cpp linguist-language=cpp
+src/**/hpp/*   text diff=cpp linguist-language=cpp
+src/**/hxx/*   text diff=cpp linguist-language=cpp
+src/**/cxx/*   text diff=cpp linguist-language=cpp
+src/**/h++/*   text diff=cpp linguist-language=cpp 
 src/**/bas/*   text diff=bbcbasic  linguist-language=bbcbasic
 src/**/s/*     text diff=armasm linguist-language=assembly
 src/**/Hdr/*   text diff=armasm linguist-language=assembly

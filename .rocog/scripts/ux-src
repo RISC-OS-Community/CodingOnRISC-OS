@@ -22,12 +22,15 @@
 # And, if the directory exists in your pwd then it will be removed.
 ####################
 
-cmd="$1"
-env="$2"
+declare -r cmd="$1"
+declare -r env="$2"
 curr_dir="$3"
 if [ "${curr_dir}" == "" ]
 then
     curr_dir="$(pwd)"
+    declare -r curr_path="$(pwd)/src"
+else
+    declare -r curr_path="${curr_dir}/src"
 fi
 
 # Debug mode:
@@ -36,23 +39,41 @@ debug=0
 # Display command usage:
 function usage()
 {
-    echo "Usage: ux-src [gen|clean] [path]"
-    echo "gen: generate ux-src directory"
-    echo "clean: remove ux-src directory"
+    echo " Usage: ux-src <gen|clean> <github|local> [path]"
+    echo "   gen, generate ux-src directory"
+    echo " clean, remove ux-src directory"
+    echo "github, GitHub Actions environment"
+    echo " local, local environment"
+    echo "  path, the path to the source tree (optional)"
 }
 
 # Link files from directory f_dir to directory ux-src with extension f_ext:
 function link_files()
 {
-    local src_dir="$1"
-    local dst_dir="$2"
-    local f_dir="$3"
-    local f_ext="$4"
-    if [ -d ${src_dir}/${f_dir} ]
+    local dir_type="$1"
+    local src_dir="$2"
+    local dst_dir="$3"
+    local f_dir="$4"
+    local f_ext="$5"
+    local srch_path=""
+    local x="$(basename ${src_dir})"
+    if [ "$dir_type" != "2" ];
     then
-        for f in ${src_dir}/${f_dir}/*
+        srch_path="${src_dir}/${f_dir}"
+    else
+        if [ "${x}" == "${f_dir}" ];
+        then
+            srch_path="${src_dir}"
+            dst_dir="$(dirname ${dst_dir})"
+        else
+            return
+        fi
+    fi
+    if [ -d ${srch_path} ];
+    then
+        for f in ${srch_path}/*
         do
-            if [ ! -f ${f} ]
+            if [ ! -f "${f}" ]
             then
                 continue
             else
@@ -81,6 +102,7 @@ function check_path()
         [ "${last_dir}" == "c++" ] || [ "${last_dir}" == "C++" ] || \
         [ "${last_dir}" == "hpp" ] || [ "${last_dir}" == "HPP" ] || \
         [ "${last_dir}" == "hxx" ] || [ "${last_dir}" == "HXX" ] || \
+        [ "${last_dir}" == "h++" ] || [ "${last_dir}" == "H++" ] || \
         [ "${last_dir}" == "s" ] || [ "${last_dir}" == "S" ] || \
         [ "${last_dir}" == "Hdr" ] || [ "${last_dir}" == "hdr" ] || \
         [ "${last_dir}" == "fth" ] || [ "${last_dir}" == "FTH" ] || \
@@ -97,53 +119,55 @@ function check_path()
 # check for files with the known directory structure and link them in
 # the ux-src directory with their appropriate extension:
 function find_files_and_link() {
-    local src_dir="$1"
-    local dst_dir="$2"
+    local dir_type="$1"
+    local src_dir="$2"
+    local dst_dir="$3"
 
     # Link C files (if any):
-    link_files "${src_dir}" "${dst_dir}" "c" "c"
-    link_files "${src_dir}" "${dst_dir}" "C" "c"
+    link_files "${dir_type}" "${src_dir}" "${dst_dir}" "c" "c"
+    link_files "${dir_type}" "${src_dir}" "${dst_dir}" "C" "c"
 
     # Link C++ files (if any):
-    link_files "${src_dir}" "${dst_dir}" "cpp" "cpp"
-    link_files "${src_dir}" "${dst_dir}" "CPP" "cpp"
-    link_files "${src_dir}" "${dst_dir}" "cxx" "cxx"
-    link_files "${src_dir}" "${dst_dir}" "CXX" "cxx"
-    link_files "${src_dir}" "${dst_dir}" "cc"  "cc"
-    link_files "${src_dir}" "${dst_dir}" "CC"  "cc"
-    link_files "${src_dir}" "${dst_dir}" "c++" "cpp"
-    link_files "${src_dir}" "${dst_dir}" "C++" "cpp"
+    link_files "${dir_type}" "${src_dir}" "${dst_dir}" "cpp" "cpp"
+    link_files "${dir_type}" "${src_dir}" "${dst_dir}" "CPP" "cpp"
+    link_files "${dir_type}" "${src_dir}" "${dst_dir}" "cxx" "cxx"
+    link_files "${dir_type}" "${src_dir}" "${dst_dir}" "CXX" "cxx"
+    link_files "${dir_type}" "${src_dir}" "${dst_dir}" "cc"  "cc"
+    link_files "${dir_type}" "${src_dir}" "${dst_dir}" "CC"  "cc"
+    link_files "${dir_type}" "${src_dir}" "${dst_dir}" "c++" "cpp"
+    link_files "${dir_type}" "${src_dir}" "${dst_dir}" "C++" "cpp"
 
     # Link C++ header files (if any):
-    link_files "${src_dir}" "${dst_dir}" "hpp" "hpp"
-    link_files "${src_dir}" "${dst_dir}" "HPP" "hpp"
-    link_files "${src_dir}" "${dst_dir}" "hxx" "hxx"
-    link_files "${src_dir}" "${dst_dir}" "HXX" "hxx"
+    link_files "${dir_type}" "${src_dir}" "${dst_dir}" "hpp" "hpp"
+    link_files "${dir_type}" "${src_dir}" "${dst_dir}" "HPP" "hpp"
+    link_files "${dir_type}" "${src_dir}" "${dst_dir}" "hxx" "hxx"
+    link_files "${dir_type}" "${src_dir}" "${dst_dir}" "HXX" "hxx"
+    link_files "${dir_type}" "${src_dir}" "${dst_dir}" "h++" "hpp"
 
     # Link C header files (if any):
-    link_files "${src_dir}" "${dst_dir}" "h" "h"
-    link_files "${src_dir}" "${dst_dir}" "H" "h"
+    link_files "${dir_type}" "${src_dir}" "${dst_dir}" "h" "h"
+    link_files "${dir_type}" "${src_dir}" "${dst_dir}" "H" "h"
 
     # Link Assembler files (if any):
-    link_files "${src_dir}" "${dst_dir}" "s" "s"
-    link_files "${src_dir}" "${dst_dir}" "S" "s"
-    link_files "${src_dir}" "${dst_dir}" "Hdr" "s"
+    link_files "${dir_type}" "${src_dir}" "${dst_dir}" "s" "s"
+    link_files "${dir_type}" "${src_dir}" "${dst_dir}" "S" "s"
+    link_files "${dir_type}" "${src_dir}" "${dst_dir}" "Hdr" "s"
 
     # Link Forth files (if any):
-    link_files "${src_dir}" "${dst_dir}" "fth" "fth"
-    link_files "${src_dir}" "${dst_dir}" "FTH" "fth"
+    link_files "${dir_type}" "${src_dir}" "${dst_dir}" "fth" "fth"
+    link_files "${dir_type}" "${src_dir}" "${dst_dir}" "FTH" "fth"
 
     # Link Pascal and Prolog files (if any):
-    link_files "${src_dir}" "${dst_dir}" "p" "p"
-    link_files "${src_dir}" "${dst_dir}" "P" "p"
+    link_files "${dir_type}" "${src_dir}" "${dst_dir}" "p" "p"
+    link_files "${dir_type}" "${src_dir}" "${dst_dir}" "P" "p"
 
     # Link Perl files (if any):
-    link_files "${src_dir}" "${dst_dir}" "pl" "pl"
-    link_files "${src_dir}" "${dst_dir}" "PL" "pl"
+    link_files "${dir_type}" "${src_dir}" "${dst_dir}" "pl" "pl"
+    link_files "${dir_type}" "${src_dir}" "${dst_dir}" "PL" "pl"
 
     # Link BASIC files (if any):
-    link_files "${src_dir}" "${dst_dir}" "bas" "bas"
-    link_files "${src_dir}" "${dst_dir}" "BAS" "bas"
+    link_files "${dir_type}" "${src_dir}" "${dst_dir}" "bas" "bas"
+    link_files "${dir_type}" "${src_dir}" "${dst_dir}" "BAS" "bas"
 
     # Find and link local files
     # (that may also be called Makefile.unix etc.):
@@ -154,10 +178,19 @@ function find_files_and_link() {
     then
         for f in ${src_dir}/*
         do
-            fname="$(basename ${f})"
+            local fname="$(basename ${f})"
             # Remove ,fd7 etc. from the filename:
             fname="$(echo ${fname} | sed 's/,.*//')"
-            if [ -f ${f} ];
+            local fext="$(echo ${fname} | sed 's/^.*\.//')"
+            # Skip files with extensions: .o, .a, .so
+            if [ "${fext}" == "o"   ] || [ "${fext}" == "a"   ] ||
+               [ "${fext}" == "od"  ] || [ "${fext}" == "oz"  ] ||
+               [ "${fext}" == "odz" ] || [ "${fext}" == "so"  ] ||
+               [[ "${fext}" =~ "so\..*" ]];
+            then
+                continue
+            fi
+            if [ -f "${f}" ];
             then
                 if [ "$env" == "github" ]
                 then
@@ -181,24 +214,40 @@ function gen_dirs()
         if [ ! -d "${d}" ]
         then
             local dname2="$(echo ${d} | sed 's/^.*\/src\///')"
-            find_files_and_link "${d}" "${curr_dir}/ux-src/${dname2}"
+            find_files_and_link "0" "${d}" "${curr_dir}/ux-src/${dname2}"
         else
             local dname="$(basename "${d}")"
             check_path "${dname}"
             local rval=$?
             if [ $rval -eq 1 ];
             then
-                local dname2="$(echo ${d} | sed 's/^.*\/src\///')"
-                find_files_and_link "${d}" "${curr_dir}/ux-src/${dname2}"
+                #local dname2="$(echo ${d} | sed 's/^.*\/src\///')"
+                local dname2="${d#*/src/}"
+                if [ "${dname2}" != "" ]
+                then
+                    find_files_and_link "2" "${d}" "${curr_dir}/ux-src/${dname2}"
+                fi
             else
                 local dname2="$(echo ${d} | sed 's/^.*\/src\///')"
-                if [ ! -d "${curr_dir}/ux-src/${dname2}" ]
+                echo -n "Processing: ${dname2} ... "
+                local dname3="$(basename ${dname2})"
+                if [ "${dname3}" != "o"   ] && [ "${dname3}" != "a"   ] &&
+                   [ "${dname3}" != "od"  ] && [ "${dname3}" != "oz"  ] &&
+                   [ "${dname3}" != "odz" ] && [ "${dname3}" != "so"  ] ;
                 then
-                    mkdir -p "${curr_dir}/ux-src/${dname2}"
-                    find_files_and_link "${d}" "${curr_dir}/ux-src/${dname2}"
+                    # Skip the o directory (it's not required in the UX world)
+                    # process everythign else:
+                    if [ ! -d "${curr_dir}/ux-src/${dname2}" ]
+                    then
+                        mkdir -p "${curr_dir}/ux-src/${dname2}"
+                        find_files_and_link "${rval}" "${d}" "${curr_dir}/ux-src/${dname2}"
+                    fi
+                    echo "ok"
+                    # Recursive call to explore the sub-directory
+                    gen_dirs "${d}"
+                else
+                    echo "skipped"
                 fi
-                # Recursive call to explore the sub-directory
-                gen_dirs "${d}"
             fi
         fi
     done
@@ -224,7 +273,7 @@ check_cmd
 # Check if we are in a RISC OS source tree:
 if [ ! -d ${curr_dir}/src ]
 then
-    echo "Error: you are not in a RISC OS Community source tree"
+    echo "Error: it appears you are not in a RISC OS Community source tree"
     exit 1
 fi
 
@@ -234,13 +283,13 @@ then
     echo "Generating ux-src directory in ${curr_dir}"
 
     # Generate ux-src:
-    mkdir ${curr_dir}/ux-src
+    mkdir -p ${curr_dir}/ux-src
 
     # Generate all the directories in ux-src:
-    gen_dirs
+    gen_dirs "${curr_path}"
 
     # Link main Makefiles:
-    if [ -f ${curr_dir}/src/Makefile* ]
+    if compgen -G "${curr_dir}/src/Makefile*" > /dev/null;
     then
         for f in ${curr_dir}/src/Makefile*
         do
@@ -256,7 +305,7 @@ then
     fi
 
     # Link the Build Script for Unix:
-    if [ -f ${curr_dir}/src/MkGCC.sh ]
+    if [ -f "${curr_dir}/src/MkGCC.sh" ]
     then
         if [ "$env" == "github" ]
         then
